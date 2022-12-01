@@ -44,4 +44,11 @@ function makeSound(key){
 
     }
 }
+function buttonAnimation(event){
+    var button=document.querySelector("."+event);
+    button.classList.add("pressed");
+    setTimeout(function(){
+         button.classList.remove("pressed");
+    }, "100");
+}    
 
