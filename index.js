@@ -3,11 +3,13 @@ for(var i=0;i<len;i++){
     document.querySelectorAll("button")[i].addEventListener("click",function(){
         var element=this.innerHTML;
         makeSound(element);
+        buttonAnimation(element);
         
     })
 }
 document.addEventListener("keypress",function(event){
     makeSound(event.key);
+    buttonAnimation(event.key);
 })
 function makeSound(key){
     switch(key){
